@@ -1,0 +1,24 @@
+
+
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.resources.srcDirs = ["../assets"]
+project.ext.assetsDir = new File("../assets")
+
+
+sourceSets {
+	test {
+        java {
+            srcDir 'src'
+        }
+    }
+    
+    
+}
+
+eclipse.project {
+    name = appName + "-tests"
+}

@@ -1,0 +1,6 @@
+{
+leaderboard: [
+	"{name:Test,score:1}"
+]
+max_entries: 10
+}
